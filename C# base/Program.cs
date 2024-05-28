@@ -1,4 +1,5 @@
-﻿using CpFind;
+﻿
+using CpFind;
 
 class Start
 {
