@@ -1,10 +1,9 @@
-﻿using System;
-using CpFind;
+﻿using CpFind;
 
 class Start
 {
     static void Main()
     {
-        FindNumber.Find_Number_Main();
+        CpuFindNumber.Cpu_find_number();
     }
 }
