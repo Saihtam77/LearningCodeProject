@@ -1,32 +1,32 @@
 
-
-namespace loihCpuFindNumber
+using RandomGenerator;
+using System;
+namespace CpuFindNumber2
 {
-    using RandomGenerator;
 
     class CpuFind
     {
-        int number;
+        static int number;
         static int min = 1;
         static int max = 101;
 
-        void Cpu_find_number_main()
+        public static void Cpu_find_number_main()
         {
             Console.WriteLine("Enter a number between 1 and 100: ");
             number = Convert.ToInt32(Console.ReadLine());
             verif();
         }
 
-        void verif()
+        static void verif()
         {
             int cpu_resp = Cpu_resp();
-            Console.WriteLine("do the number is " + cpu_resp + " ?");
+            Console.WriteLine($"do the number is {cpu_resp} ? (1) yes (2) less (3) greater");
             string user_resp = Console.ReadLine();
             if (isANumber_input(user_resp))
             {
                 if (IsEgale(user_resp))
                 {
-                    Console.WriteLine("the number is " + number);
+                    Console.WriteLine("the number is " + cpu_resp);
                 }
                 else if (IsGreater(user_resp))
                 {
@@ -42,35 +42,35 @@ namespace loihCpuFindNumber
             }
         }
 
-        int Cpu_resp()
+        static int Cpu_resp()
         {
             int cpu_number = RandomGen.Random_number(min, max);
             return cpu_number;
         }
 
-        bool Check_resp(string input, string expected)
+        static bool Check_resp(string input, string expected)
         {
             return input == expected;
         }
 
-        bool IsEgale(string input)
+        static bool IsEgale(string input)
         {
             return Check_resp(input, "1");
         }
 
 
-
-        bool IsGreater(string input)
-        {
-            return Check_resp(input, "3");
-        }
-
-        bool IsLess(string input)
+        static bool IsLess(string input)
         {
             return Check_resp(input, "2");
         }
 
-        bool isANumber_input(string input)
+        static bool IsGreater(string input)
+        {
+            return Check_resp(input, "3");
+        }
+
+
+        static bool isANumber_input(string input)
         {
             if (input == "1" || input == "2" || input == "3")
             {

@@ -1,14 +1,14 @@
-namespace CpFind
+namespace CpuFindNumber
 {
 
-    class CpuFindNumber
+    class CpuFind
     {
 
         static int user_input;
         static int min = 0;
         static int max = 101;
 
-        public static void Cpu_find_number()
+        public static void Cpu_find_number_main()
         {
             User_select();
             Computer_select();

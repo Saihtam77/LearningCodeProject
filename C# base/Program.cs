@@ -1,10 +1,12 @@
 ﻿
-using CpFind;
+using CpuFindNumber2;
+using Data;
+using Dsearch;
 
 class Start
 {
     static void Main()
     {
-        CpuFindNumber.Cpu_find_number();
+        DsearchClass.Search_main();
     }
 }
