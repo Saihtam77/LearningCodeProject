@@ -1,12 +1,8 @@
-﻿
-using CpuFindNumber2;
-using Data;
-using Dsearch;
-
+﻿using Magasin;
 class Start
 {
     static void Main()
     {
-        DsearchClass.Search_main();
+        MagasinClass.Magasin_main();
     }
 }

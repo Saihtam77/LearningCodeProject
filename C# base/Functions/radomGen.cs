@@ -1,3 +1,5 @@
+using System.Data.Entity.Core.Metadata.Edm;
+
 namespace RandomGenerator
 {
     class RandomGen
@@ -66,5 +68,23 @@ namespace RandomGenerator
             return table;
         }
 
+        public static List<int> Random_list(int size)
+        {
+            List<int> list = new(size);
+            
+            int min = 0;
+            int max = min + 20;
+            
+            for (int i = 0; i < size; i++)
+            {
+                int value = rand.Next(min, max);
+                list.Add(value);
+                min = value+1;
+            }
+            return list;
+        }
+    
     }
+
+    
 }
