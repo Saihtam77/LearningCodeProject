@@ -12,8 +12,14 @@ namespace MagasinCrud{
 
         }
 
-        public static void AddType_Article(){
-
+        public static void AddType_Article(ref Dictionary<string,List<string>> magasin){
+            
+            List<string> newArticle = new List<string>();
+            Console.WriteLine("Entrez le type de l'article:");
+            string type = Console.ReadLine();
+            Console.WriteLine("Entrez le nom de l'article:");
+            string name = Console.ReadLine();
+        
         }
         
         /* Animal methodes................................................. */

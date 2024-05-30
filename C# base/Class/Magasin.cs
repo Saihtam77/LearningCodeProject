@@ -32,7 +32,7 @@ namespace Magasin
                         Magasin_main();
                         break;
                     case 2:
-                        Magasin_crud.AddType_Article();
+                        Magasin_crud.AddType_Article(ref magasin);
                         break;
                     case 3:
                         Magasin_crud.Add_Animal();
