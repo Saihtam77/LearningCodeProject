@@ -1,8 +1,8 @@
-﻿using Magasin;
+﻿using Banque_Class;
 class Start
 {
     static void Main()
     {
-        MagasinClass.Magasin_main();
+        
     }
 }

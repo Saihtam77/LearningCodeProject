@@ -59,7 +59,7 @@ namespace DicoExo{
         /* search if the key existe */
         static void Dico1_Search(Dictionary<string,int> dico){
             Console.WriteLine("Enter a key to search for:");
-            string key = Console.ReadLine();
+            string? key = Console.ReadLine();
             if(dico.ContainsKey(key)){
                 Console.WriteLine("Key found: "+key);
             }
@@ -71,7 +71,7 @@ namespace DicoExo{
         /* search the value of a key */
         static void Dico1_Search_Value(Dictionary<string,int> dico){
             Console.WriteLine("Enter a key to search for:");
-            string key = Console.ReadLine();
+            string? key = Console.ReadLine();
             if(dico.ContainsKey(key)){
                 dico.TryGetValue(key, out int value);
                 Console.WriteLine("Value of key "+key+" is: "+value);

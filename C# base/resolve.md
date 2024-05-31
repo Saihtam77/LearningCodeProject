@@ -1,12 +1,6 @@
-_ Add livre to dico (gestion erreur (sensible a la case, pas de doublon))
-    _ Message d'erreur
+compt bancaire (construction avec code )
 
-_ Ajouter un auteur
- 
-_ Supprimer le livre (gestion d'erreur(si existe pas))
-
-_ Visualiser tout les livre et leurs auteur
-
-_ Visualiser tout les livre d'un auteur
-
-_ Chercher un livre (gestion d'erreur)
+Depot / Gestion d'erreur etc...
+retrait (le montant ne doit pas être plus grand le solde du compte)
+DisplayCode
+DisPlaySolde
